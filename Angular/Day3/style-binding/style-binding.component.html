@@ -1,0 +1,11 @@
+<p>style-binding works!</p>
+
+<h1 style="color: blue;"> In Html Apply style... </h1>
+
+<h1 [style.color]="mycolor"> Apply Style using Style Binding </h1>
+
+<h2 [style.color]="rating<4?'green':'red'" >Apply style on Condition </h2>
+
+<h2 [style.color]="rating<4?mycolor2:mycolor"> Apply Style on Another Condition </h2>
+
+<h2 [ngStyle]="myobj"> Apply Multiple CSS Property using ngStyle</h2>
