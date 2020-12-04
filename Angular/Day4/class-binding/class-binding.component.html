@@ -1,0 +1,16 @@
+<!-- <app-event-binding></app-event-binding> -->
+
+<p>class-binding works!</p>
+
+<h1 class="success"> Normal HTML Apply Class </h1>
+<hr>
+<h1 [class]="myclass"> Apply Class Binding  </h1>
+
+<h2 [class]="rating<4?myclass:myclass2">Apply Class Binding on Condition </h2>
+
+<h2 [class.success]="rating<4" [class.danger]="rating>4">Apply Class Binding on Condition</h2>
+
+<h2 [ngClass]="objclass"> Apply Multiple Classes using ngClass Directive </h2>
+
+
+
