@@ -1,0 +1,32 @@
+<p>eventbindingpart2 works!</p>
+
+<input type="text" 
+placeholder="Enter the Username..." (change)="onChange()">
+<!-- $event is special variable it gives all information of current DOM Element -->
+
+<hr>
+<input type="text" placeholder="Enter the Username..." (change)="onChange1($event)">
+<hr>
+<button (click)="onClick($event)">Click</button>
+<!-- template ref.Variable
+It is a object
+-->
+<hr>
+
+<label for="">Username::</label>
+<input  #myinput type="text" placeholder="Enter the Username..." >
+<button (click)="onGetData(myinput)">Get Data</button>
+<hr>
+<input #myinput1 type="text" placeholder="Enter the Username "
+(keyup)="OnKeyUp(myinput1.value)"
+>
+<hr>
+<input type="text" placeholder="Enter the Name....."
+(keydown)="onKeyDown()">
+<hr>
+<h2>Two Way Binding</h2>
+<input type="text" [(ngModel)]="twoway"><br>
+{{twoway}} <hr>
+
+<input type="text" [(ngModel)]="myobj.name">
+{{myobj.name}}

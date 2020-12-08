@@ -1,0 +1,34 @@
+<p>ifdirective works!</p>
+<!-- if directive is structural directive.* indicates a structural directive -->
+<!-- 3 structural directive 
+ if 
+ for
+ switch -->
+
+ <div *ngIf="rating<4">
+    <h2>Condition is true</h2> 
+ </div>
+<h2>Use if - else</h2>
+
+<div *ngIf="rating1<4; else elsepart">
+    <h2>Condition is true</h2>     
+</div>
+<!-- <div #elsepart>
+    <h3>Condition is false</h3>
+</div> -->
+<ng-template #elsepart>
+    <h3>Condition is false</h3>
+</ng-template>
+<hr>
+
+<div *ngIf="rating3<4;then mainpart else elsepart2">   
+     
+</div>
+<ng-template #mainpart>
+    <input type="text" placeholder="Condition is true">
+</ng-template>
+
+<ng-template #elsepart2 >
+    <button>Repeat</button>
+</ng-template>
+
