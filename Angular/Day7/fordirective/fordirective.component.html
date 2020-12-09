@@ -1,0 +1,43 @@
+<p>fordirective works!</p>
+
+<ul>
+    <li *ngFor="let item of course"> {{item}} </li>
+</ul>
+<hr>
+<table border="1px">
+    <thead>
+        <th>Sr no</th>
+        <th>Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of course;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item}} </td>
+        </tr>
+    </tbody>
+</table>
+<hr>
+
+<table border="1px">
+    <thead>
+        <th>#</th>
+        <th>Product Name</th>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>price</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of prodDetails;index as i">
+            <td>  {{i+1}} </td>
+            <td> 
+                
+                {{item.prodname}} </td>
+            <td>  {{item.description}} </td>
+            <td>  {{item.quantity}} </td>
+            <td>  {{item.price}} </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
