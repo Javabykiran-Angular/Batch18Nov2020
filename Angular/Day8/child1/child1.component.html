@@ -1,0 +1,21 @@
+<p>child1 works!</p>
+
+<h2> {{parentdata}} </h2>
+
+<table border="1px">
+    <thead>
+        <th>#</th>
+        <th>Name</th>
+        <th>ID</th>
+        <th>Desigation</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of parentarrobj;index as i">
+            <td> {{i+1}} </td>
+            <td> {{item.name}} </td>
+            <td> {{item.id}} </td>
+            <td> {{item.desigation}} </td>
+
+        </tr>
+    </tbody>
+</table>

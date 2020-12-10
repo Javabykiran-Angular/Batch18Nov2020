@@ -1,0 +1,9 @@
+<p>parent works!</p>
+
+<h2> {{fromchild}} </h2>
+
+<hr>
+<!-- <app-child1 [parentdata]="msg"  ></app-child1> -->
+<app-child1 [parentarrobj]="arrobj"  ></app-child1>
+<hr>
+<app-child2 (datafromchild)="fromchild=$event" ></app-child2>
