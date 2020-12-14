@@ -1,0 +1,26 @@
+<p>custom-pipe works!</p>
+
+
+<div>
+    <input type="text" placeholder="Search..." 
+    style="float: right;" [(ngModel)]="Search">
+ <br>
+    <table border="1px">
+        <thead>
+            <th>Sr No</th>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Status</th>
+            <th>Country</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of tempEmpdata |filter:Search;index as i">
+                <td> {{i+1}} </td>
+                <td> {{item.id}} </td>
+                <td> {{item.name}} </td>
+                <td> {{item.status}} </td>
+                <td> {{item.country.cname}} </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
