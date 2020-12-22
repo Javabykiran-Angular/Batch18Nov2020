@@ -1,0 +1,13 @@
+www.getbootstrap.com or
+w3schools
+-Install bootstrap in angular
+npm install --save bootstrap@4.0.0
+
+Bootstrap Grid System
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+Note :- Each class scales up, so if you wish to set the same widths for sm and md, you only need to specify sm
